@@ -3,18 +3,9 @@ from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi import FastAPI, Request, Form
 
-from fastapi.staticfiles import StaticFiles
-from pathlib import Path
-
 import sentiment_analysis as se
 
 app = FastAPI()
-
-app.mount(
-    "/static",
-    StaticFiles(directory=Path(__file__).parent.absolute() / "static"),
-    name="static",
-)
 
 templates = Jinja2Templates(directory="templates/")
 
