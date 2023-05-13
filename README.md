@@ -1,7 +1,7 @@
 # Text Sentiment Analysis
 
 #### Color-Coded Text Sentiment Analysis (also known as opinion mining or emotion AI) using [TextBlob](https://textblob.readthedocs.io/en/dev/) for NLP.
-![image](https://github.com/J43fura/Text-Sentiment-Analysis/assets/73950268/128cade4-e7b9-4ce9-9243-0130964b354e)
+![image](https://github.com/J43fura/Text-Sentiment-Analysis/assets/73950268/71348abf-d892-41dc-80ab-633cc7289dcf)
 *Objective & Positive, Objective & Negative, Subjective & Positive, Subjective & Negative and Neutral.*
 
 **Installations:**
