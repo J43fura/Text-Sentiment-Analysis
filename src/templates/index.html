@@ -5,17 +5,24 @@
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
   </head>
   <body>
-    <header style="margin-bottom: 1rem"><h1>Sentiment Analysis</h1></header>
-    <form action="/" method="post" style="text-align: right">
-      <textarea
-        type="submit"
-        name="text"
-        placeholder="Insert your text..."
-        style="height: 100%"
-      ></textarea>
-      <br />
-      <button type="submit">Analyze</button>
-    </form>
+    <header style="margin-bottom: 1rem">
+      <h1>Sentiment Analysis</h1>
+      <form action="/" method="post" style="text-align: center">
+        <textarea
+          type="submit"
+          name="text"
+          placeholder="Insert your text..."
+          style="height: 100%; width: 80%"
+        ></textarea>
+        <br />
+        <select name="tool">
+          <option value="textblob">TextBlob</option>
+          <option value="vader">Vader</option>
+        </select>
+        <button type="submit">Analyze</button>
+      </form>
+    </header>
+
     <h2>Results:</h2>
     <div style="display: grid; grid-template-columns: 50% 50%">
       <div class="notice">
