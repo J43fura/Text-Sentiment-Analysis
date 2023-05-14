@@ -6,12 +6,11 @@
 _Objective & Positive, Objective & Negative, Subjective & Positive, Subjective & Negative and Neutral._
 
 **Setup:**
-
 - `pip install -r requirements.txt`
 - `python -m textblob.download_corpora`
 
-Execute in src:
-
-- `py -m uvicorn main:app --reload`
+Execute:
+- `cd src`
+- `python -m uvicorn main:app --reload`
 
 This app uses [FastAPI](https://fastapi.tiangolo.com/lo/), [TextBlob](https://textblob.readthedocs.io/en/dev/), [VADER](https://github.com/cjhutto/vaderSentiment), [simplecss](https://simplecss.org/).
