@@ -5,20 +5,12 @@
 ![image](https://github.com/J43fura/Text-Sentiment-Analysis/assets/73950268/71348abf-d892-41dc-80ab-633cc7289dcf)
 _Objective & Positive, Objective & Negative, Subjective & Positive, Subjective & Negative and Neutral._
 
-**Installations:**
+**Setup:**
 
-NLP
+- `pip install -r requirements.txt`
+- `python -m textblob.download_corpora`
 
-- `py -m pip install -U textblob`
-- `py -m textblob.download_corpora`
-- `py -m pip install vadersentiment`
-
-FastAPI
-
-- `py -m pip install "fastapi[all]"`
-- `py -m pip install "uvicorn[standard]"`
-
-Execute
+Execute in src:
 
 - `py -m uvicorn main:app --reload`
 

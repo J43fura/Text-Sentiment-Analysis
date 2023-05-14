@@ -1,0 +1,6 @@
+fastapi[all]
+Jinja2
+python-multipart
+uvicorn[standard]
+textblob
+vadersentiment

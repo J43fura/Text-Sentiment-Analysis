@@ -21,4 +21,6 @@ async def root(request: Request, text: str = Form(''),  tool: str = Form('')):
         sentiment_scores = se.get_textblob_sentiment_scores(text)
     elif tool == "vader":   
         sentiment_scores = se.get_vader_sentiment_scores(text)
+    else:
+        sentiment_scores=''
     return templates.TemplateResponse("index.html", {"request": request, "sentences": sentiment_scores})
