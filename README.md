@@ -18,4 +18,14 @@ Execution
 - `cd src`
 - `python -m uvicorn main:app --reload`
 
-This app uses [FastAPI](https://fastapi.tiangolo.com/lo/), [TextBlob](https://textblob.readthedocs.io/en/dev/), [VADER](https://github.com/cjhutto/vaderSentiment), [simplecss](https://simplecss.org/).
+This app uses 
+--
+- Models
+  - [TextBlob](https://textblob.readthedocs.io/en/dev/)
+  - [VADER](https://github.com/cjhutto/vaderSentiment)
+- Python Framework
+  - [FastAPI](https://fastapi.tiangolo.com/lo/)
+    - Template engine:
+      - [Jinja2](https://fastapi.tiangolo.com/advanced/templates/)   
+- Styling
+  - [simplecss](https://simplecss.org/)
