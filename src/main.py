@@ -17,10 +17,7 @@ async def index(request: Request):
 
 @app.post("/", response_class=HTMLResponse)
 async def root(request: Request, text: str = Form(''),  tool: str = Form('')):
-    if tool == "textblob":
-        sentiment_scores = se.get_textblob_sentiment_scores(text)
-    elif tool == "vader":   
-        sentiment_scores = se.get_vader_sentiment_scores(text)
-    else:
-        sentiment_scores=''
+    #Current tools: textblob, vader.
+    #Example# tool == textblob: sentiment_scores = se.get_textblob_sentiment_scores(text)
+    sentiment_scores = getattr(se,f'get_{tool}_sentiment_scores', lambda _: '')(text)
     return templates.TemplateResponse("index.html", {"request": request, "sentences": sentiment_scores})
